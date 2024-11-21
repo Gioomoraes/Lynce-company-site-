@@ -1,0 +1,396 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fd7702;
+}
+
+.about__grid {
+  display: flex;
+  gap: 50px;
+}
+
+.img__grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 200%;
+  flex: 3;
+}
+
+.large-image {
+  width: 50%;
+  flex: 2;
+  margin-top: 58px;
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+  gap: 20px;
+  flex: 1;
+  width: 40%;
+}
+
+.text__grid {
+  color: #ffffff;
+  margin-top: 7%;
+  flex: 2;
+}
+
+.text__grid h4 {
+  font-size: 50px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+}
+
+.text__grid .sobre-web {
+  font-family: "Poppins", sans-serif;
+  margin-top: 70px;
+  font-size: 17px;
+  text-align: left;
+  font-weight: 400;
+}
+
+#dishes {
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 18px;
+  width: 25%;
+  padding: 20px;
+  background-color: var(--color-neutral-0);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.dish-heart {
+  position: absolute;
+  background-color: var(--color-primary-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.563rem;
+  color: var(--color-primary-1);
+  width: 70px;
+  height: 70px;
+  right: -10px;
+  top: -10px;
+  border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-title {
+  text-align: center;
+}
+
+.dish-image {
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dish-description {
+  color: #434343;
+  text-align: center;
+}
+
+.dish-rate a {
+  text-decoration: none;
+}
+
+.dish-rate i {
+  color: var(--color-primary-6);
+}
+
+.dish-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text__empresa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 15%;
+}
+
+.text__empresa h4 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: left;
+  max-width: 100%; /* Garante que o título não ultrapasse a tela */
+  margin: 0 auto; /* Centraliza o h4 dentro da div */
+  padding: 0 10px; /* Adiciona um pouco de espaçamento nas laterais */
+  flex-grow: 1;
+}
+
+.mini__text {
+  font-size: 50px;
+  text-align: left;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #ffffff;
+  width: 90%;
+}
+
+.img__text {
+  display: flex;
+  gap: 30px;
+}
+
+.img__text img {
+  margin-top: 70%;
+}
+
+.img__010203 {
+  margin-left: 150px;
+}
+
+.text__010203 {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+
+.text__010203 p {
+  text-align: left;
+  line-height: 1.7;
+  color: white;
+}
+
+.text__010203 span {
+  font-weight: bold;
+}
+
+.text__class {
+  text-align: center;
+  color: #000000;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.class__ferramentas {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  gap: 8%;
+  margin-top: 10%;
+}
+
+.class__ferramentas h1 {
+  color: #002347;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.class__ferramentas p {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.class__ferramentas i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+  #dishes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dish {
+    width: calc(30% - 12px);
+    margin-top: 5%;
+  }
+
+  .large-image img {
+    display: none;
+  }
+
+  .mobile_menu .btn-default-1 {
+    display: none;
+  }
+
+  .mobile_menu .btn-default-2 {
+    display: none;
+  }
+
+  nav .btn-default-1 {
+    display: none;
+  }
+
+  nav .btn-default-2 {
+    display: none;
+  }
+
+  .img__grid .small-images .small {
+    width: 100%;
+  }
+
+  .text__grid .sobre-web {
+    display: none;
+  }
+  .sobre-mbl {
+    display: block;
+    font-size: 17px;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-mbl {
+    font-size: 15px;
+  }
+
+  #testimonial_chef {
+    display: none;
+  }
+
+  .text__empresa h4 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .mini__text {
+    width: 60%;
+    margin-top: 8%;
+  }
+
+  .img__text {
+    width: 70%;
+  }
+
+  .text__empresa {
+    gap: 10%;
+  }
+
+  .text__010203 p {
+    font-size: 14px;
+  }
+
+  .img__010203 {
+    margin-left: 0;
+  }
+
+  .text__class {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dish {
+    width: 80%;
+  }
+
+  #menu .section-subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 25%;
+  }
+
+  .mobile_menu .btn-default-1 {
+    display: block;
+  }
+
+  .mobile_menu .btn-default-2 {
+    display: block;
+  }
+
+  nav .btn-default-1 {
+    display: none;
+  }
+
+  nav .btn-default-2 {
+    display: none;
+  }
+
+  .about__grid {
+    display: block;
+  }
+
+  .img__grid {
+    display: none;
+  }
+
+  .text__empresa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text__empresa .mini__text h4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .img__010203 {
+    margin-left: 0;
+  }
+  .img__text {
+    width: 100%;
+    margin-top: 20%;
+  }
+  .img__text img {
+    margin-top: 100%;
+  }
+
+  .text__010203 {
+    font-size: 15px;
+    width: auto;
+  }
+  .text__010203 p {
+    font-size: 13px;
+  }
+  .mini__text {
+    display: block;
+    margin-left: 0;
+  }
+
+  .text__class {
+    font-size: 25px;
+  }
+  .class__ferramentas {
+    flex-direction: column;
+    gap: 10%;
+  }
+
+  .class__ferramentas div {
+    margin-top: 20%;
+  }
+
+  .sobre-mbl {
+    margin-top: 8%;
+  }
+}

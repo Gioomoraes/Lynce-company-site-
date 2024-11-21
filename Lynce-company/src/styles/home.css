@@ -1,0 +1,190 @@
+#home {
+  display: flex;
+  min-height: calc(100vh - 91px); /* Altura mínima */
+  max-height: calc(100vh - 91px); /* Altura máxima */
+  position: relative;
+  overflow: hidden;
+}
+
+#cta {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 7%;
+  overflow-wrap: break-word;
+  max-width: 700px;
+}
+
+#cta .title {
+  font-size: 3rem;
+  color: var(--color-neutral-1);
+  line-height: 1.4;
+  width: 150%;
+}
+
+#cta .title span {
+  color: var(--color-primary-6);
+}
+
+#cta .description {
+  font-size: 1.2rem;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+}
+
+#cta_buttons .btn-default-4 {
+  text-decoration: none;
+  color: white;
+}
+
+.sobre-mbl {
+  display: none;
+}
+
+#phone_button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+#phone_button button {
+  box-shadow: none;
+}
+
+#banner {
+  display: flex;
+  align-items: flex-end; /* Alinha a imagem na parte inferior */
+  justify-content: flex-end; /* Move a imagem para a direita */
+  width: 100%; /* Garante que o container do banner ocupe toda a largura */
+  position: absolute; /* Permite posicionar sobre outros elementos */
+  bottom: 0; /* Fixa na parte inferior */
+  right: 0; /* Ajusta para a direita */
+  z-index: -1; /* Garante que fique no fundo */
+}
+#banner img {
+  width: 100%; /* Ajusta o tamanho ao container */
+  max-width: 60%; /* Define um tamanho máximo para a imagem */
+  object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+.img-mbl {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    max-width: 130%;
+  }
+
+  #cta .title {
+    width: 90%;
+    text-align: center;
+  }
+  #cta .description {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cta {
+    width: 100%; /* O texto ocupa toda a largura disponível */
+    padding: 0 10px; /* Adiciona espaço interno */
+    margin-top: 0;
+  }
+
+  #nav_logo img {
+    width: 100px;
+  }
+
+  #menu {
+    margin-top: 80px;
+  }
+
+  #cta .title {
+    width: 90%;
+    font-size: 27px;
+    text-align: center;
+  }
+
+  #cta .description {
+    display: none;
+  }
+
+  .btn-default-4 {
+    font-size: 13px;
+  }
+  #phone_button {
+    font-size: 13px;
+  }
+
+  .img-mbl {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 60%; /* Garante que o contêiner ocupe toda a largura */
+    padding: 0; /* Remove padding para evitar deslocamentos */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+  }
+
+  .img-mbl img {
+    width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+    max-width: 100%; /* Impede que a imagem exceda os limites do contêiner */
+    object-fit: cover; /* Evita distorções */
+    flex-direction: column;
+  }
+
+  .sobre-web {
+    display: none;
+  }
+
+  .sobre-mbl {
+    display: block;
+    font-size: 15px;
+  }
+
+  .text__grid h4 {
+    text-align: center;
+  }
+
+  .about__grid .text__grid h4 {
+    font-size: 36px;
+  }
+
+  .img__grid .small-images .small {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+}
