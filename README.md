@@ -16,9 +16,6 @@ Este projeto é um site responsivo e interativo, desenvolvido como parte de um p
 - Animações suaves ao rolar a página.
 - Navegação intuitiva e dinâmica.
 
-  ## 📷 Demonstração
-![Homepage](images/homepage.png)
-Uma prévia da página inicial do projeto.
 
 ## 💻 Autor
 - Desenvolvido por Giovanna de Moraes.
