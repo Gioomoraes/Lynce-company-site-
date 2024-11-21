@@ -1,5 +1,5 @@
 #testimonials {
-  min-height: calc(100vh - 91px);
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,6 +255,15 @@
 
   .video__container .video-lynce {
     justify-content: center;
+  }
+
+  #testimonials {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .video__container {
+    margin-top: 5%;
   }
 }
 
