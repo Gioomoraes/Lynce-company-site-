@@ -34,6 +34,11 @@ $(document).ready(function () {
     $(navItems[activeSectionIndex]).addClass("active");
   });
 
+  $(window).on("resize", function () {
+    const homeHeight = $("#home").outerHeight();
+    $("#banner img").css("height", homeHeight + "px");
+  });
+
   ScrollReveal().reveal("#cta", {
     origin: "left",
     duration: 2000,

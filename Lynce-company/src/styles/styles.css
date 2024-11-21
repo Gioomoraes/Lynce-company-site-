@@ -38,6 +38,15 @@ section {
   padding: 28px 5%;
 }
 
+.section_Politica {
+  padding: 20px 50px;
+  font-size: 17px;
+}
+
+.agdr {
+  font-size: 20px;
+}
+
 .btn-default-1 {
   border: none;
   display: flex;
